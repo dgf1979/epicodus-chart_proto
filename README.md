@@ -1,14 +1,6 @@
-## [APPNAME] ##
+## ChartKick Demo ##
 
-This application is meant to fulfill the requirements of an assignment through Epicodus code school. For more information on Epicodus, see <http://www.epicodus.com/>.
-
-### Description ###
-
-[simple app description]
-
-**Assignment:** [assignment title]
-
-**<https://www.learnhowtoprogram.com/table-of-contents>**
+Demo project to try out creating charts from data using ChartKick
 
 ### Author(s) ###
 
@@ -16,7 +8,11 @@ Andrew Finstrom
 
 ### Setup ###
 ```
-    setup code or details here
+    bundle install
+    rake db:create
+    rake db:migrate
+    rake db:test:prepare
+    ruby app.rb
 ```
 
 ### License ###
