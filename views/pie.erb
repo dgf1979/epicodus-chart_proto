@@ -1,3 +1,6 @@
 Kickchart sample
 
-<%= pie_chart Person.group(:flavor_id).count %>
+<%=
+  pie_chart Flavor.joins(:people).group('flavors.name').count,
+  colors: ['#FF6666','#E5CA7D', '#663300','993399'] 
+%>
